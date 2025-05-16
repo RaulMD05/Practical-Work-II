@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.LoginPage"
+             Title="Login">
+
+    <StackLayout Padding="30" Spacing="15" VerticalOptions="Center">
+
+        <Label Text="Username" />
+        <Entry x:Name="UsernameEntry" Placeholder="Enter your username" />
+
+        <Label Text="Password" />
+        <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True" />
+
+        <Label Text="Forgot Password?"
+               TextColor="Blue"
+               HorizontalOptions="End"
+               GestureRecognizers="{TapGestureRecognizer Command={Binding ForgotPasswordCommand}}" />
+
+        <Button Text="Sign In"
+                Clicked="OnSignInClicked" />
+
+    </StackLayout>
+</ContentPage>

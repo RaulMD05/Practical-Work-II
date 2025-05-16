@@ -1,0 +1,12 @@
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pracitcal_work_ii.csproj.AssemblyReference.cache
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\POO\Practical-Work-II\pracitcal_work_ii\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pracitcal_work_ii.GeneratedMSBuildEditorConfig.editorconfig
