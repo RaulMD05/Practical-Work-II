@@ -1,11 +1,14 @@
-﻿namespace pracitcal_work_ii;
+﻿using practical_work_ii;
 
-public partial class App : Application
+namespace practitcal_work_ii
 {
-	public App()
-	{
-		InitializeComponent();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+            MainPage = new LoginPage();
+        }
+    }
 }

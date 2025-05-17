@@ -10,14 +10,14 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.pracitcal_work_ii")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.practitcal_work_ii")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "pracitcal_work_ii")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "practitcal_work_ii")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("pracitcal_work_ii")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c6ab0405a245cdcb44a01de3a19cf127d82bceae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+38080bd2792abd4af766f62ccdd3bb52b22902bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("pracitcal_work_ii")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pracitcal_work_ii")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

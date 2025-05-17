@@ -1,32 +1,53 @@
-﻿public partial class LoginPage : ContentPage
+﻿using System;
+using Microsoft.Maui.Controls;
+
+namespace practical_work_ii;
+
+public partial class LoginPage : ContentPage
 {
+    private UserStore userStore;
+
     public LoginPage()
     {
         InitializeComponent();
+        userStore = new UserStore(); // ← Instanciamos la clase UserStore
+
+        var forgotTap = new TapGestureRecognizer();
+        forgotTap.Tapped += async (s, e) =>
+        {
+            await Shell.Current.GoToAsync("forgotPassword"); // Asegúrate que esta ruta existe
+        };
+        forgotLabel.GestureRecognizers.Add(forgotTap);
+
+        var registerTap = new TapGestureRecognizer();
+        registerTap.Tapped += async (s, e) =>
+        {
+            await Shell.Current.GoToAsync("register"); // Asegúrate que esta ruta existe
+        };
+        registerLabel.GestureRecognizers.Add(registerTap);
     }
 
-    private void OnSignInClicked(object sender, EventArgs e)
+    private async void OnLoginClicked(object sender, EventArgs e)
     {
-        string username = UsernameEntry.Text;
-        string password = PasswordEntry.Text;
+        string username = usernameEntry?.Text?.Trim();
+        string password = passwordEntry?.Text?.Trim();
 
-        // Put your simple login check here using your file approach
-        // For example:
-        if (CheckLogin(username, password))
+        if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
         {
-            // Navigate to Converter or Operations page
+            await DisplayAlert("Error", "Por favor, completa ambos campos.", "OK");
+            return;
+        }
+
+        bool loginSuccess = userStore.LoginUser(username, password);
+
+        if (loginSuccess)
+        {
+            await DisplayAlert("Bienvenido", "Inicio de sesión correcto", "OK");
+            await Shell.Current.GoToAsync("converter"); // ← Cambia si usas otra ruta
         }
         else
         {
-            DisplayAlert("Error", "Invalid username or password", "OK");
-            UsernameEntry.Text = "";
-            PasswordEntry.Text = "";
+            await DisplayAlert("Error", "Usuario o contraseña incorrectos.", "OK");
         }
-    }
-
-    private bool CheckLogin(string username, string password)
-    {
-        // Your login logic here (read file, check creds)
-        return false; // example
     }
 }

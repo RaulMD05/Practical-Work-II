@@ -21,10 +21,10 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>pracitcal_work_ii</ApplicationTitle>
+		<ApplicationTitle>practitcal_work_ii</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.pracitcal_work_ii</ApplicationId>
+		<ApplicationId>com.companyname.practitcal_work_ii</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>

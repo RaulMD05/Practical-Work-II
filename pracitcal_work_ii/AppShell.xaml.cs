@@ -1,4 +1,4 @@
-﻿namespace pracitcal_work_ii;
+﻿namespace practitcal_work_ii;
 
 public partial class AppShell : Shell
 {

@@ -1,23 +1,43 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YourNamespace.LoginPage"
-             Title="Login">
+             x:Class="practical_work_ii.LoginPage"
+             Title="Login"
+             BackgroundColor="White">
 
-    <StackLayout Padding="30" Spacing="15" VerticalOptions="Center">
+    <VerticalStackLayout Padding="30" Spacing="15">
 
-        <Label Text="Username" />
-        <Entry x:Name="UsernameEntry" Placeholder="Enter your username" />
+        <Label Text="Bienvenido al Conversor" 
+               FontSize="24" 
+               HorizontalOptions="Center" />
 
-        <Label Text="Password" />
-        <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True" />
+       <Entry x:Name="usernameEntry" 
+       Placeholder="Nombre de usuario"
+       TextColor="Black"
+       PlaceholderColor="Gray" />
 
-        <Label Text="Forgot Password?"
+<Entry x:Name="passwordEntry" 
+       Placeholder="Contraseña" 
+       IsPassword="True"
+       TextColor="Black"
+       PlaceholderColor="Gray" />
+
+
+        <Button Text="Iniciar sesión" 
+                Clicked="OnLoginClicked"
+                BackgroundColor="#007AFF"
+                TextColor="White" />
+
+        <Label Text="¿Olvidaste tu contraseña?"
                TextColor="Blue"
-               HorizontalOptions="End"
-               GestureRecognizers="{TapGestureRecognizer Command={Binding ForgotPasswordCommand}}" />
+               HorizontalOptions="Center"
+               x:Name="forgotLabel" />
 
-        <Button Text="Sign In"
-                Clicked="OnSignInClicked" />
+        <Label Text="¿No tienes cuenta? Regístrate"
+               HorizontalOptions="Center"
+               FontAttributes="Italic"
+               TextColor="Gray"
+               x:Name="registerLabel" />
 
-    </StackLayout>
+    </VerticalStackLayout>
 </ContentPage>

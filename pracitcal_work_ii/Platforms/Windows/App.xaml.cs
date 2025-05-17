@@ -1,9 +1,10 @@
 ﻿using Microsoft.UI.Xaml;
+using practitcal_work_ii;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace pracitcal_work_ii.WinUI;
+namespace practitcal_work_ii.WinUI;
 
 /// <summary>
 /// Provides application-specific behavior to supplement the default Application class.
